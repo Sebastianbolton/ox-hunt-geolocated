@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "oxhunt-bdbe4"
+    "default": "app-halloween-primavera"
   },
-  "targets": {}
+  "targets": {},
+  "etags": {}
 }

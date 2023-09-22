@@ -7,22 +7,21 @@ class FirebaseService {
 
     constructor() {
 
-        this._ADMIN_TOKEN = 'FIREBASE ADMIN ROKEN';
+        this._ADMIN_TOKEN = 'eykJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZG1pbiIsImlhdCI6MTY5NTM3OTM4M30.yLuXbl8h_dVWJksEEAndMbAdx2yeHMy3dbxz2C6xJAc';
 
         const firebaseConfig = {
-            apiKey: "FIREBASE API KEY",
-            authDomain: "FIREBASE DOMAIN",
-            projectId: "oxhunt-bdbe4",
-            storageBucket: "GOOGLE STORAGE BUCKET",
-            messagingSenderId: "MESSAGING SENDER ID",
-            appId: "APP ID",
-            measurementId: "GOOGLE ANALYTICS ID"
+            apiKey: "AIzaSyCM9N-CLLRRK8NoX821IdQKNhIGlj1UKEA",
+            authDomain: "app-halloween-primavera.firebaseapp.com",
+            projectId: "app-halloween-primavera",
+            storageBucket: "app-halloween-primavera.appspot.com",
+            messagingSenderId: "692264211539",
+            appId: "1:692264211539:web:9dfffc737a776e019c22a6"
         };
         
         // Initialize Firebase
         const fireApp = initializeApp(firebaseConfig);
 
-        this.fireFunctions = getFunctions(fireApp, 'europe-west1');
+        this.fireFunctions = getFunctions(fireApp, 'southamerica-east1');
         
         if ('development' === Constants.ENV) {
             console.log("connected to emulator");
